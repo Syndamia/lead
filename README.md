@@ -32,6 +32,10 @@ This fork adds support for specifying an interval to wait before the action is t
 
 To build *lead* open a terminal in the root folder of the repository and:
 
+    $ qmake && make
+
+or alternatively (depending on distribution):
+
     $ qmake-qt5 && make
 
 ### Dependencies
@@ -40,10 +44,11 @@ To build *lead* open a terminal in the root folder of the repository and:
 - Qt5Gui 
 - Qt5Core
 
-<details>
-<summary>Fedora 34 installation</summary>
-<pre>$ sudo dnf install -y qmake-qt5-devel</pre>
-</details>
+Instructions on installing the dependencies:
+|OS|Command|
+|---|---|
+|Ubuntu 20.04|`$ sudo apt install -y qt5-default qt5-qmake`|
+|Fedora 34|`$ sudo dnf install -y qmake-qt5-devel`|
 
 # Install it
 
