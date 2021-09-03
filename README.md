@@ -2,8 +2,8 @@
 
 This fork adds support for specifying an interval to wait before the action is triggered. There may be more improvements in the future.
 
-![Screenshot of lead](https://github.com/almamu/lead/blob/master/screenshots/screenshot1.png)
-![Screenshot of lead](https://github.com/almamu/lead/blob/master/screenshots/screenshot2.png)
+![Screenshot of lead](./screenshots/screenshot1.png)
+![Screenshot of lead](./screenshots/screenshot2.png)
 > Sensors are not displayed unless the debug mode is enabled
 
 
