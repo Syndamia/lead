@@ -8,6 +8,7 @@ This fork adds support for specifying an interval to wait before the action is t
 
 
 ### Features
+
 - hot corners: sensors in the corners of the screen
 - hot sides: sensors on center/middle edge of the screen
 - freely configurable action for each sensor
@@ -25,17 +26,24 @@ This fork adds support for specifying an interval to wait before the action is t
 
 # Build it
 
-*lead* uses [clang](http://clang.llvm.org/) as compiler, [g++](https://gcc.gnu.org/) as linker and [make](https://www.gnu.org/software/make/) as build-tool. 
+*lead* uses [make](https://www.gnu.org/software/make/) as the build-tool, but the makefile is generated with [qmake](https://wiki.qt.io/Qmake).
+
+*qmake* offers flexibility in compiler and linker choice, but [gcc](https://gcc.gnu.org/) and [g++](https://gcc.gnu.org/) have been proven to work.
 
 To build *lead* open a terminal in the root folder of the repository and:
 
-    $ make
+    $ qmake-qt5 && make
 
 ### Dependencies
+
 - Qt5Widgets 
 - Qt5Gui 
 - Qt5Core
 
+<details>
+<summary>Fedora 34 installation</summary>
+<pre>$ sudo dnf install -y qmake-qt5-devel</pre>
+</details>
 
 # Install it
 
